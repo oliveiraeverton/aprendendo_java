@@ -1,0 +1,12 @@
+Para executar um programa em **JAVA** é preciso compilá-lo.
+
+Para executar qualquer programa de JAVA, o nome do arquivo deve ser o mesmo que está a frente de ***public class.***
+
+## Compilar
+
+1. Abra o cmd;
+2. Digite **javac nome_do_programa.java**
+
+## Executar
+
+1. Digite **java** **nome_do_programa**
