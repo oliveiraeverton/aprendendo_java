@@ -1,0 +1,41 @@
+## Uma divisão inteira
+
+Para pegar uma parte inteira da divisão
+
+```java
+public class Programa {
+	public static void main(String[] args){
+
+        int divisao;
+        
+        /* divisao = 45.89 / 7; */
+        /* Não Executa 
+        System.out.println("Essa divisão é " + divisao);
+        */
+        divisao = 1/3; /* esse resultado é 0.3333.... */
+        System.out.println("Esse resultado é fruto de um TRUNCAMENTO: " + divisao + "Então o resultado é 0.");
+	}
+
+}
+```
+
+## Divisão com o tipo Float ou Double
+
+```java
+public class Programa {
+
+	public static void main(String[] args){
+
+	double salario;
+	salario = 1245 / 99;
+	System.out.print("salario é igual a " + salario);
+	/* 1245 /99 = 12,575757... */
+	/* O que aconteceu ? */
+	}
+
+}
+```
+
+O java faz a divisão primeiro de 1245 / 99, que aparentemente são dois número tipo **INT**, ****então ele armazena na memória um truncamento resultando em 12, e depois ele verifica que a variável salario é do tipo double, armazenando 12.0;
+
+Para contornar esse problema, utilize 1245.0 / 99;
